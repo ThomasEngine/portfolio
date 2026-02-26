@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas | Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Thomas.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Thomas</h1>
+      <h2 class="hero-title">Game Developer</h2>
+      <p class="hero-description">
+        I'm a first-year Game Development student at Breda University of Applied Sciences, passionate about programming and creating games. Excited to grow as a developer and explore new technologies.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="code-block">
+        <span class="code-line"><span class="kw">const</span> developer = {</span>
+        <span class="code-line">  name: <span class="str">'Thomas'</span>,</span>
+        <span class="code-line">  role: <span class="str">'Game Developer'</span>,</span>
+        <span class="code-line">  loves: [<span class="str">'coding'</span>, <span class="str">'problem solving'</span>],</span>
+        <span class="code-line">  available: <span class="bool">true</span></span>
+        <span class="code-line">};</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="section-container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I enjoy low-level programming and writing quality code. I'm always looking to optimize and architect my projects thoughtfully, learning as I go. Currently, I'm diving into ray tracing and path tracing, and excited to see where my journey in game development takes me.
+          </p>
+          <p>
+            I'm very social and love learning from others, sharing knowledge, and helping fellow developers. When I'm not coding, I enjoy exploring open-source projects and contributing to the developer community.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">Always</span>
+            <span class="stat-label">Learning to code better</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">Studying</span>
+            <span class="stat-label">At Breda University of Applied Sciences</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Passion for Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section-container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li class="skill-item">C++</li>
+            <li class="skill-item">Python</li>
+            <li class="skill-item">C</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks &amp; Libraries</h3>
+          <ul class="skill-list">
+            <li class="skill-item">OpenGL</li>
+            <li class="skill-item">GLSL</li>
+            <li class="skill-item">SDL2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <!-- Project header removed: icon and links -->
+          <h3 class="project-title">Minecraft Clone</h3>
+          <p class="project-desc">
+            <span class="desc-short">A Minecraft clone built from scratch using C++ and OpenGL...</span>
+            <span class="desc-full" style="display:none;">A Minecraft clone built from scratch using C++ and OpenGL. Made to run on a raspberry pi, the game features a fully functional voxel engine, allowing players to explore and interact with a infinitely procedurally generated world. The game includes basic mechanics such as block placement and destruction, as well as a simple crafting system. Cross-platform support allows you to play on both Windows and Linux, and the game is optimized to run smoothly on low-end hardware.</span>
+            <button class="see-more-btn" onclick="toggleDesc(this)">See More</button>
+          </p>
+          <div class="project-media">
+            <img src="assets/MinecraftSnippet.gif" alt="Minecraft Clone gameplay GIF" style="height:140px;width:auto;border-radius:8px;margin-top:10px;" />
+          </div>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">3D Voxel Engine</span>
+            <span class="tag">Cross-Platform</span>
+            <span class="tag">Raspberry Pi</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <!-- Project header removed: icon and links -->
+          <h3 class="project-title">Bomberman</h3>
+          <p class="project-desc">
+            <span class="desc-short">A full remake of the NES Bomberman game...</span>
+            <span class="desc-full" style="display:none;">A full remake of the NES Bomberman game, built without stl, using C++ and OpenGL. The game features the full Bomberman experience, including all the classic power-ups, all enemies, all bonuses and multiplayer modes. In addition to the classic gameplay, I added player vs player mode, where players can battle each other in a 2D arena. The game supports up to 2 players and is fully 2D.</span>
+            <button class="see-more-btn" onclick="toggleDesc(this)">See More</button>
+          </p>
+          <div class="project-media">
+            <img src="assets/BombermanSnip.gif" alt="Bomberman gameplay GIF" style="height:140px;width:auto;border-radius:8px;margin-top:10px;" />
+          </div>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">2D Game Development</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <!-- Project header removed: icon and links -->
+          <h3 class="project-title">Voxel Ray-Tracer</h3>
+          <p class="project-desc">
+            <span class="desc-short">A voxel-based ray tracing engine built with C++ and OpenGL...</span>
+            <span class="desc-full" style="display:none;">A voxel-based ray tracing engine built with C++ and OpenGL. This project demonstrates advanced rendering techniques, including real-time lighting, shadows, and reflections, all within a voxel environment. The engine is optimized for performance and provides a flexible framework for experimenting with various ray tracing algorithms.</span>
+            <button class="see-more-btn" onclick="toggleDesc(this)">See More</button>
+          </p>
+          <div class="project-tags">
+            <span class="tag">C++</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">Ray Tracing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="section-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">
+        Want to have a part time colleague or just want to say hi? My inbox is always open.
+      </p>
+      <a href="mailto:thomas.van.mildert@gmail.com" class="btn btn-primary">Say Hello</a>
+      <div class="social-links">
+        <a href="https://github.com/ThomasEngine" target="_blank" rel="noopener" class="social-link">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer
+  <footer>
+    <p>Designed &amp; Built by Thomas</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
